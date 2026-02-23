@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Smart Campus Student Dashboard - Manage your courses, grades, and schedule.">
+    <title>Dashboard - Smart Campus</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ============ NAVBAR ============ -->
+    <header class="navbar">
+        <div class="logo">Smart Campus</div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">About <i class="fas fa-chevron-down" style="font-size:0.65rem;margin-left:4px"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html"><i class="fas fa-bullseye" style="margin-right:8px;width:16px"></i>Our
+                                Mission</a></li>
+                        <li><a href="about.html"><i class="fas fa-users"
+                                    style="margin-right:8px;width:16px"></i>Team</a></li>
+                        <li><a href="about.html"><i class="fas fa-clock"
+                                    style="margin-right:8px;width:16px"></i>History</a></li>
+                    </ul>
+                </li>
+                <li><a href="courses.html">Courses</a></li>
+                <li class="dropdown">
+                    <a href="#" class="active">Services <i class="fas fa-chevron-down"
+                            style="font-size:0.65rem;margin-left:4px"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="dashboard.html"><i class="fas fa-th-large"
+                                    style="margin-right:8px;width:16px"></i>Student Portal</a></li>
+                        <li><a href="admin.html"><i class="fas fa-shield-alt"
+                                    style="margin-right:8px;width:16px"></i>Admin Panel</a></li>
+                        <li><a href="contact.html"><i class="fas fa-headset"
+                                    style="margin-right:8px;width:16px"></i>Support</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-right">
+            <i class="fa fa-bell notification-badge" style="cursor:pointer"></i>
+            <img src="https://i.pravatar.cc/40" class="profile-img" alt="Profile">
+            <a href="../index.html" class="btn outline-btn small-btn">Logout</a>
+        </div>
+    </header>
+
+    <!-- ============ DASHBOARD LAYOUT ============ -->
+    <div class="dashboard">
+
+        <aside class="sidebar">
+            <ul>
+                <li class="active"><i class="fas fa-home"></i> Dashboard</li>
+                <li><i class="fas fa-book"></i> My Courses</li>
+                <li><i class="fas fa-calendar-alt"></i> Schedule</li>
+                <li><i class="fas fa-chart-bar"></i> Grades</li>
+                <li><i class="fas fa-file-alt"></i> Assignments</li>
+                <li><i class="fas fa-comments"></i> Messages</li>
+                <li><i class="fas fa-cog"></i> Settings</li>
+                <li><i class="fas fa-sign-out-alt"></i> Logout</li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+
+            <!-- Welcome Banner -->
+            <div
+                style="background:var(--gradient-primary);color:white;padding:28px 30px;border-radius:var(--radius-md);margin-bottom:28px;display:flex;justify-content:space-between;align-items:center">
+                <div>
+                    <h2 style="font-size:1.4rem;margin-bottom:4px">Welcome back, Rahul! 👋</h2>
+                    <p style="opacity:0.85;font-size:0.9rem">You have 3 upcoming assignments and 1 exam this week.</p>
+                </div>
+                <a href="courses.html" class="btn"
+                    style="background:rgba(255,255,255,0.2);color:white;border:1px solid rgba(255,255,255,0.3)">
+                    <i class="fas fa-book"></i> View Courses
+                </a>
+            </div>
+
+            <!-- Stat Cards -->
+            <section class="cards">
+                <div class="card">
+                    <i class="fas fa-book icon blue"></i>
+                    <h3>6</h3>
+                    <p>Enrolled Courses</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-tasks icon green"></i>
+                    <h3>12</h3>
+                    <p>Assignments Due</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-trophy icon purple"></i>
+                    <h3>3.8</h3>
+                    <p>Current GPA</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-clock icon orange"></i>
+                    <h3>24</h3>
+                    <p>Credit Hours</p>
+                </div>
+            </section>
+
+            <!-- Schedule + Quick Links Grid -->
+            <div class="admin-grid">
+                <section class="recent-activity">
+                    <h2><i class="fas fa-calendar-alt" style="color:var(--primary);margin-right:8px"></i>Upcoming
+                        Schedule</h2>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <div class="activity-icon"><i class="fas fa-laptop-code"></i></div>
+                            <div class="activity-content">
+                                <p>Data Structures — Lecture</p>
+                                <span>Today, 10:00 AM — Room 204</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon" style="background:rgba(16,185,129,0.08);color:var(--accent)"><i
+                                    class="fas fa-flask"></i></div>
+                            <div class="activity-content">
+                                <p>Physics Lab — Practical</p>
+                                <span>Today, 2:00 PM — Lab 3</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon" style="background:rgba(245,158,11,0.08);color:var(--warning)"><i
+                                    class="fas fa-file-alt"></i></div>
+                            <div class="activity-content">
+                                <p>Mathematics — Assignment Due</p>
+                                <span>Tomorrow, 11:59 PM</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon" style="background:rgba(239,68,68,0.08);color:var(--danger)"><i
+                                    class="fas fa-clipboard-list"></i></div>
+                            <div class="activity-content">
+                                <p>Database Systems — Mid-term Exam</p>
+                                <span>Friday, 9:00 AM — Hall A</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="quick-actions">
+                    <h2><i class="fas fa-bolt" style="color:var(--warning);margin-right:8px"></i>Quick Links</h2>
+                    <div class="action-buttons">
+                        <a href="courses.html" class="btn primary-btn action-btn"><i class="fas fa-search"></i> Browse
+                            Courses</a>
+                        <a href="#" class="btn success-btn action-btn"><i class="fas fa-download"></i> Download
+                            Transcript</a>
+                        <a href="contact.html" class="btn warning-btn action-btn"><i class="fas fa-headset"></i> Get
+                            Support</a>
+                        <a href="#" class="btn outline-btn action-btn"><i class="fas fa-user-edit"></i> Edit Profile</a>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Student Table -->
+            <section class="table-section">
+                <h2><i class="fas fa-users" style="color:var(--primary);margin-right:8px"></i>My Classmates</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Department</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Priya Sharma</td>
+                            <td>priya@mail.com</td>
+                            <td>Computer Science</td>
+                            <td><span class="badge active">Active</span></td>
+                        </tr>
+                        <tr>
+                            <td>Amit Verma</td>
+                            <td>amit@mail.com</td>
+                            <td>Computer Science</td>
+                            <td><span class="badge active">Active</span></td>
+                        </tr>
+                        <tr>
+                            <td>Sneha Gupta</td>
+                            <td>sneha@mail.com</td>
+                            <td>Computer Science</td>
+                            <td><span class="badge inactive">Inactive</span></td>
+                        </tr>
+                        <tr>
+                            <td>Vikram Patel</td>
+                            <td>vikram@mail.com</td>
+                            <td>Computer Science</td>
+                            <td><span class="badge active">Active</span></td>
+                        </tr>
+                        <tr>
+                            <td>Kavya Iyer</td>
+                            <td>kavya@mail.com</td>
+                            <td>Computer Science</td>
+                            <td><span class="badge active">Active</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Smart Campus</h3>
+                <p>Empowering education through technology. Our platform helps institutions deliver quality education
+                    and foster student success.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Campus Street, Education City</p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@smartcampus.edu</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Smart Campus. All rights reserved. Made with <i class="fas fa-heart"
+                    style="color:#ef4444"></i> for education.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

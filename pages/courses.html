@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our comprehensive range of academic programs at Smart Campus.">
+    <title>Courses - Smart Campus</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ============ NAVBAR ============ -->
+    <header class="navbar">
+        <div class="logo">Smart Campus</div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">About <i class="fas fa-chevron-down" style="font-size:0.65rem;margin-left:4px"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html"><i class="fas fa-bullseye" style="margin-right:8px;width:16px"></i>Our
+                                Mission</a></li>
+                        <li><a href="about.html"><i class="fas fa-users"
+                                    style="margin-right:8px;width:16px"></i>Team</a></li>
+                        <li><a href="about.html"><i class="fas fa-clock"
+                                    style="margin-right:8px;width:16px"></i>History</a></li>
+                    </ul>
+                </li>
+                <li><a href="courses.html" class="active">Courses</a></li>
+                <li class="dropdown">
+                    <a href="#">Services <i class="fas fa-chevron-down"
+                            style="font-size:0.65rem;margin-left:4px"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="dashboard.html"><i class="fas fa-th-large"
+                                    style="margin-right:8px;width:16px"></i>Student Portal</a></li>
+                        <li><a href="admin.html"><i class="fas fa-shield-alt"
+                                    style="margin-right:8px;width:16px"></i>Admin Panel</a></li>
+                        <li><a href="contact.html"><i class="fas fa-headset"
+                                    style="margin-right:8px;width:16px"></i>Support</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-right">
+            <a href="login.html" class="btn primary-btn">Login</a>
+            <a href="register.html" class="btn outline-btn">Register</a>
+        </div>
+    </header>
+
+    <!-- ============ HERO ============ -->
+    <section class="courses-hero">
+        <div class="container">
+            <h1>Our Courses</h1>
+            <p>Explore our comprehensive range of academic programs designed to prepare you for success in a rapidly
+                evolving world.</p>
+        </div>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="stats-bar">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>80+</h3>
+                    <p>Courses Available</p>
+                </div>
+                <div class="stat-item">
+                    <h3>6</h3>
+                    <p>Departments</p>
+                </div>
+                <div class="stat-item">
+                    <h3>50+</h3>
+                    <p>Expert Faculty</p>
+                </div>
+                <div class="stat-item">
+                    <h3>92%</h3>
+                    <p>Placement Rate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ COURSES ============ -->
+    <section class="courses-content">
+        <div class="container">
+            <!-- Filter Tags -->
+            <div class="course-filters">
+                <span class="filter-tag active-tag">All Courses</span>
+                <span class="filter-tag">Technology</span>
+                <span class="filter-tag">Business</span>
+                <span class="filter-tag">Engineering</span>
+                <span class="filter-tag">Health</span>
+                <span class="filter-tag">Arts</span>
+                <span class="filter-tag">Law</span>
+            </div>
+
+            <div class="courses-grid">
+                <!-- Course 1 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=200&fit=crop"
+                            alt="Computer Science">
+                        <div class="course-category">Technology</div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Computer Science</h3>
+                        <p>Learn programming, algorithms, data structures, AI, and software development principles.</p>
+                        <div class="course-rating">
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star-half-alt star"></i>
+                            <span style="color:var(--gray-500);margin-left:6px">4.8 (245 reviews)</span>
+                        </div>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 4 Years</span>
+                            <span><i class="fas fa-users"></i> 120 Students</span>
+                            <span><i class="fas fa-signal"></i> Advanced</span>
+                        </div>
+                        <a href="#enroll-modal" class="btn primary-btn" style="width:100%">Enroll Now</a>
+                    </div>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=200&fit=crop"
+                            alt="Business Administration">
+                        <div class="course-category">Business</div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Business Administration</h3>
+                        <p>Master management, finance, marketing, and entrepreneurial skills for business leadership.
+                        </p>
+                        <div class="course-rating">
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="far fa-star star empty"></i>
+                            <span style="color:var(--gray-500);margin-left:6px">4.5 (189 reviews)</span>
+                        </div>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 4 Years</span>
+                            <span><i class="fas fa-users"></i> 95 Students</span>
+                            <span><i class="fas fa-signal"></i> Intermediate</span>
+                        </div>
+                        <a href="#enroll-modal" class="btn primary-btn" style="width:100%">Enroll Now</a>
+                    </div>
+                </div>
+
+                <!-- Course 3 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=200&fit=crop"
+                            alt="Mechanical Engineering">
+                        <div class="course-category">Engineering</div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Mechanical Engineering</h3>
+                        <p>Study design, manufacturing, thermodynamics, robotics, and mechanical systems analysis.</p>
+                        <div class="course-rating">
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <span style="color:var(--gray-500);margin-left:6px">4.9 (156 reviews)</span>
+                        </div>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 4 Years</span>
+                            <span><i class="fas fa-users"></i> 85 Students</span>
+                            <span><i class="fas fa-signal"></i> Advanced</span>
+                        </div>
+                        <a href="#enroll-modal" class="btn primary-btn" style="width:100%">Enroll Now</a>
+                    </div>
+                </div>
+
+                <!-- Course 4 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=200&fit=crop"
+                            alt="Medicine">
+                        <div class="course-category">Health</div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Medicine</h3>
+                        <p>Comprehensive medical education covering anatomy, physiology, diagnostics, and clinical
+                            practice.</p>
+                        <div class="course-rating">
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star-half-alt star"></i>
+                            <span style="color:var(--gray-500);margin-left:6px">4.7 (98 reviews)</span>
+                        </div>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 6 Years</span>
+                            <span><i class="fas fa-users"></i> 60 Students</span>
+                            <span><i class="fas fa-signal"></i> Advanced</span>
+                        </div>
+                        <a href="#enroll-modal" class="btn primary-btn" style="width:100%">Enroll Now</a>
+                    </div>
+                </div>
+
+                <!-- Course 5 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=400&h=200&fit=crop"
+                            alt="Fine Arts">
+                        <div class="course-category">Arts</div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Fine Arts</h3>
+                        <p>Explore painting, sculpture, digital art, photography, and contemporary artistic practices.
+                        </p>
+                        <div class="course-rating">
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="far fa-star star empty"></i>
+                            <span style="color:var(--gray-500);margin-left:6px">4.3 (72 reviews)</span>
+                        </div>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 4 Years</span>
+                            <span><i class="fas fa-users"></i> 45 Students</span>
+                            <span><i class="fas fa-signal"></i> Beginner</span>
+                        </div>
+                        <a href="#enroll-modal" class="btn primary-btn" style="width:100%">Enroll Now</a>
+                    </div>
+                </div>
+
+                <!-- Course 6 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=400&h=200&fit=crop"
+                            alt="Law">
+                        <div class="course-category">Law</div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Law</h3>
+                        <p>Study legal principles, constitutional law, corporate law, and preparation for legal
+                            practice.</p>
+                        <div class="course-rating">
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star-half-alt star"></i>
+                            <span style="color:var(--gray-500);margin-left:6px">4.6 (134 reviews)</span>
+                        </div>
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 3 Years</span>
+                            <span><i class="fas fa-users"></i> 70 Students</span>
+                            <span><i class="fas fa-signal"></i> Intermediate</span>
+                        </div>
+                        <a href="#enroll-modal" class="btn primary-btn" style="width:100%">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ ENROLLMENT MODAL (CSS-only :target) ============ -->
+    <div id="enroll-modal" class="modal-overlay">
+        <div class="modal">
+            <a href="#" class="modal-close">&times;</a>
+            <h2><i class="fas fa-graduation-cap" style="color:var(--primary);margin-right:10px"></i>Course Enrollment
+            </h2>
+            <form>
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label>Student ID</label>
+                    <input type="text" placeholder="Enter your student ID">
+                </div>
+                <div class="form-group">
+                    <label>Preferred Course</label>
+                    <select>
+                        <option>Select a course</option>
+                        <option>Computer Science</option>
+                        <option>Business Administration</option>
+                        <option>Mechanical Engineering</option>
+                        <option>Medicine</option>
+                        <option>Fine Arts</option>
+                        <option>Law</option>
+                    </select>
+                </div>
+                <div class="form-group checkbox-group">
+                    <label><input type="checkbox" required> I agree to the enrollment terms and conditions</label>
+                </div>
+                <button type="submit" class="btn primary-btn" style="width:100%;margin-top:8px">
+                    <i class="fas fa-paper-plane"></i> Submit Enrollment
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Smart Campus</h3>
+                <p>Empowering education through technology. Our platform helps institutions deliver quality education
+                    and foster student success.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Campus Street, Education City</p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@smartcampus.edu</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Smart Campus. All rights reserved. Made with <i class="fas fa-heart"
+                    style="color:#ef4444"></i> for education.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

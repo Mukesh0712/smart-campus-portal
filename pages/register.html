@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register for Smart Campus Portal - Create your student account.">
+    <title>Register - Smart Campus</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="auth-body">
+
+    <!-- ============ NAVBAR ============ -->
+    <header class="navbar">
+        <div class="logo">Smart Campus</div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">About <i class="fas fa-chevron-down" style="font-size:0.65rem;margin-left:4px"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html"><i class="fas fa-bullseye" style="margin-right:8px;width:16px"></i>Our
+                                Mission</a></li>
+                        <li><a href="about.html"><i class="fas fa-users"
+                                    style="margin-right:8px;width:16px"></i>Team</a></li>
+                        <li><a href="about.html"><i class="fas fa-clock"
+                                    style="margin-right:8px;width:16px"></i>History</a></li>
+                    </ul>
+                </li>
+                <li><a href="courses.html">Courses</a></li>
+                <li class="dropdown">
+                    <a href="#">Services <i class="fas fa-chevron-down"
+                            style="font-size:0.65rem;margin-left:4px"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="dashboard.html"><i class="fas fa-th-large"
+                                    style="margin-right:8px;width:16px"></i>Student Portal</a></li>
+                        <li><a href="admin.html"><i class="fas fa-shield-alt"
+                                    style="margin-right:8px;width:16px"></i>Admin Panel</a></li>
+                        <li><a href="contact.html"><i class="fas fa-headset"
+                                    style="margin-right:8px;width:16px"></i>Support</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-right">
+            <a href="login.html" class="btn primary-btn">Login</a>
+            <a href="register.html" class="btn outline-btn">Register</a>
+        </div>
+    </header>
+
+    <!-- ============ AUTH SPLIT LAYOUT ============ -->
+    <div class="auth-page">
+        <div class="auth-brand">
+            <h2><i class="fas fa-user-plus" style="margin-right:12px"></i>Join Smart Campus</h2>
+            <p>Create your account and start your learning journey with access to world-class courses and tools.</p>
+            <ul class="brand-features">
+                <li><i class="fas fa-check-circle"></i> Free account creation</li>
+                <li><i class="fas fa-check-circle"></i> Access 80+ courses</li>
+                <li><i class="fas fa-check-circle"></i> Personal dashboard</li>
+                <li><i class="fas fa-check-circle"></i> Certificate upon completion</li>
+            </ul>
+        </div>
+        <div class="auth-form-side">
+            <div class="auth-container fade-in">
+                <h2>Create Account</h2>
+                <p class="subtitle">Fill in your details to get started</p>
+
+                <div class="social-login">
+                    <button class="social-login-btn"><i class="fab fa-google" style="color:#ea4335"></i> Google</button>
+                    <button class="social-login-btn"><i class="fab fa-github" style="color:#333"></i> GitHub</button>
+                </div>
+
+                <div class="divider">or register with email</div>
+
+                <form action="login.html">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>First Name</label>
+                            <input type="text" placeholder="John" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Doe" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" placeholder="+1 (555) 000-0000">
+                    </div>
+                    <div class="form-group">
+                        <label>Department</label>
+                        <select>
+                            <option>Select department</option>
+                            <option>Computer Science</option>
+                            <option>Business Administration</option>
+                            <option>Engineering</option>
+                            <option>Medicine</option>
+                            <option>Fine Arts</option>
+                            <option>Law</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="password" placeholder="Min 8 characters" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Confirm Password</label>
+                            <input type="password" placeholder="Re-enter password" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Gender</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="gender" value="male"> Male</label>
+                            <label><input type="radio" name="gender" value="female"> Female</label>
+                            <label><input type="radio" name="gender" value="other"> Other</label>
+                        </div>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <label><input type="checkbox" required> I agree to the <a href="#"
+                                style="color:var(--primary);font-weight:500">Terms &amp; Conditions</a></label>
+                    </div>
+                    <button type="submit" class="btn primary-btn" style="width:100%">
+                        <i class="fas fa-user-plus"></i> Create Account
+                    </button>
+                    <p class="redirect-text">Already have an account? <a href="login.html">Sign in</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Smart Campus</h3>
+                <p>Empowering education through technology. Our platform helps institutions deliver quality education
+                    and foster student success.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Campus Street, Education City</p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@smartcampus.edu</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Smart Campus. All rights reserved. Made with <i class="fas fa-heart"
+                    style="color:#ef4444"></i> for education.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

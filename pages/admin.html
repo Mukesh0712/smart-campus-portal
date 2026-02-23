@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Smart Campus Admin Panel - Manage students, faculty, courses, and reports.">
+    <title>Admin Panel - Smart Campus</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ============ NAVBAR ============ -->
+    <header class="navbar">
+        <div class="logo">Smart Campus — Admin</div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-right">
+            <i class="fa fa-bell notification-badge" style="cursor:pointer"></i>
+            <img src="https://i.pravatar.cc/40?img=4" class="profile-img" alt="Admin Profile">
+            <a href="../index.html" class="btn outline-btn small-btn">Logout</a>
+        </div>
+    </header>
+
+    <!-- ============ DASHBOARD LAYOUT ============ -->
+    <div class="dashboard admin-dashboard">
+
+        <aside class="sidebar">
+            <ul>
+                <li class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</li>
+                <li><i class="fas fa-users"></i> Students</li>
+                <li><i class="fas fa-chalkboard-teacher"></i> Faculty</li>
+                <li><i class="fas fa-book"></i> Courses</li>
+                <li><i class="fas fa-calendar-alt"></i> Schedule</li>
+                <li><i class="fas fa-chart-bar"></i> Reports</li>
+                <li><i class="fas fa-bell"></i> Notifications</li>
+                <li><i class="fas fa-cog"></i> Settings</li>
+                <li><i class="fas fa-sign-out-alt"></i> Logout</li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+
+            <div class="admin-header">
+                <h1>Admin Dashboard</h1>
+                <p>Welcome back, Administrator. Here's an overview of your campus.</p>
+            </div>
+
+            <!-- Stat Cards -->
+            <section class="cards admin-cards">
+                <div class="card">
+                    <i class="fas fa-users icon blue"></i>
+                    <h3>1,250</h3>
+                    <p>Total Students</p>
+                    <span class="trend positive">+12% this month</span>
+                </div>
+                <div class="card">
+                    <i class="fas fa-chalkboard-teacher icon green"></i>
+                    <h3>85</h3>
+                    <p>Faculty Members</p>
+                    <span class="trend positive">+2% this month</span>
+                </div>
+                <div class="card">
+                    <i class="fas fa-book icon purple"></i>
+                    <h3>120</h3>
+                    <p>Active Courses</p>
+                    <span class="trend neutral">No change</span>
+                </div>
+                <div class="card">
+                    <i class="fas fa-dollar-sign icon orange"></i>
+                    <h3>$2.5M</h3>
+                    <p>Annual Revenue</p>
+                    <span class="trend positive">+8% this year</span>
+                </div>
+            </section>
+
+            <!-- Activity + Quick Actions -->
+            <div class="admin-grid">
+                <section class="recent-activity">
+                    <h2><i class="fas fa-history" style="color:var(--primary);margin-right:8px"></i>Recent Activity</h2>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <div class="activity-icon"><i class="fas fa-user-plus"></i></div>
+                            <div class="activity-content">
+                                <p>New student registered: John Doe</p>
+                                <span>2 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon" style="background:rgba(16,185,129,0.08);color:var(--accent)"><i
+                                    class="fas fa-book"></i></div>
+                            <div class="activity-content">
+                                <p>Course "Advanced Mathematics" updated</p>
+                                <span>4 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon" style="background:rgba(245,158,11,0.08);color:var(--warning)"><i
+                                    class="fas fa-calendar-check"></i></div>
+                            <div class="activity-content">
+                                <p>Exam schedule published for Semester 2</p>
+                                <span>1 day ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon" style="background:rgba(124,58,237,0.08);color:var(--secondary)">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="activity-content">
+                                <p>15 students graduated this month</p>
+                                <span>2 days ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon" style="background:rgba(239,68,68,0.08);color:var(--danger)"><i
+                                    class="fas fa-exclamation-triangle"></i></div>
+                            <div class="activity-content">
+                                <p>System maintenance scheduled for Sunday</p>
+                                <span>3 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="quick-actions">
+                    <h2><i class="fas fa-bolt" style="color:var(--warning);margin-right:8px"></i>Quick Actions</h2>
+                    <div class="action-buttons">
+                        <a href="#add-student-modal" class="btn primary-btn action-btn">
+                            <i class="fas fa-user-plus"></i> Add Student
+                        </a>
+                        <a href="#" class="btn success-btn action-btn">
+                            <i class="fas fa-plus"></i> Add Course
+                        </a>
+                        <a href="#" class="btn warning-btn action-btn">
+                            <i class="fas fa-calendar-plus"></i> Schedule Exam
+                        </a>
+                        <a href="#" class="btn outline-btn action-btn">
+                            <i class="fas fa-file-alt"></i> Generate Report
+                        </a>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Student Management Table -->
+            <section class="table-section">
+                <h2><i class="fas fa-user-cog" style="color:var(--primary);margin-right:8px"></i>Student Management</h2>
+                <div class="table-controls">
+                    <input type="text" placeholder="Search students by name or email..." class="search-input">
+                    <select class="filter-select">
+                        <option>All Departments</option>
+                        <option>Computer Science</option>
+                        <option>Business</option>
+                        <option>Engineering</option>
+                        <option>Medicine</option>
+                    </select>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Department</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2024001</td>
+                            <td>Rahul Sharma</td>
+                            <td>rahul@mail.com</td>
+                            <td>Computer Science</td>
+                            <td><span class="badge active">Active</span></td>
+                            <td>
+                                <button class="btn small-btn outline-btn">Edit</button>
+                                <button class="btn small-btn danger-btn">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2024002</td>
+                            <td>Priya Singh</td>
+                            <td>priya@mail.com</td>
+                            <td>Business</td>
+                            <td><span class="badge active">Active</span></td>
+                            <td>
+                                <button class="btn small-btn outline-btn">Edit</button>
+                                <button class="btn small-btn danger-btn">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2024003</td>
+                            <td>Amit Kumar</td>
+                            <td>amit@mail.com</td>
+                            <td>Engineering</td>
+                            <td><span class="badge inactive">Inactive</span></td>
+                            <td>
+                                <button class="btn small-btn outline-btn">Edit</button>
+                                <button class="btn small-btn danger-btn">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2024004</td>
+                            <td>Sneha Gupta</td>
+                            <td>sneha@mail.com</td>
+                            <td>Medicine</td>
+                            <td><span class="badge active">Active</span></td>
+                            <td>
+                                <button class="btn small-btn outline-btn">Edit</button>
+                                <button class="btn small-btn danger-btn">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2024005</td>
+                            <td>Vikram Patel</td>
+                            <td>vikram@mail.com</td>
+                            <td>Computer Science</td>
+                            <td><span class="badge active">Active</span></td>
+                            <td>
+                                <button class="btn small-btn outline-btn">Edit</button>
+                                <button class="btn small-btn danger-btn">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- ============ ADD STUDENT MODAL (CSS-only :target) ============ -->
+    <div id="add-student-modal" class="modal-overlay">
+        <div class="modal">
+            <a href="#" class="modal-close">&times;</a>
+            <h2><i class="fas fa-user-plus" style="color:var(--primary);margin-right:10px"></i>Add New Student</h2>
+            <form>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>First Name</label>
+                        <input type="text" placeholder="Enter first name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Last Name</label>
+                        <input type="text" placeholder="Enter last name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="student@mail.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Department</label>
+                    <select>
+                        <option>Select department</option>
+                        <option>Computer Science</option>
+                        <option>Business</option>
+                        <option>Engineering</option>
+                        <option>Medicine</option>
+                        <option>Fine Arts</option>
+                        <option>Law</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Student ID</label>
+                    <input type="text" placeholder="Auto-generated" disabled style="background:var(--gray-100)">
+                </div>
+                <button type="submit" class="btn primary-btn" style="width:100%;margin-top:8px">
+                    <i class="fas fa-plus"></i> Add Student
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Smart Campus</h3>
+                <p>Empowering education through technology. Our platform helps institutions deliver quality education
+                    and foster student success.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Campus Street, Education City</p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@smartcampus.edu</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Smart Campus. All rights reserved. Made with <i class="fas fa-heart"
+                    style="color:#ef4444"></i> for education.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

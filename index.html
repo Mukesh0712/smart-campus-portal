@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Smart Campus Portal - Manage students, courses and administration in one comprehensive platform.">
+    <title>Smart Campus Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ============ NAVBAR ============ -->
+    <header class="navbar">
+        <div class="logo">Smart Campus</div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">About <i class="fas fa-chevron-down" style="font-size:0.65rem;margin-left:4px"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pages/about.html"><i class="fas fa-bullseye"
+                                    style="margin-right:8px;width:16px"></i>Our Mission</a></li>
+                        <li><a href="pages/about.html"><i class="fas fa-users"
+                                    style="margin-right:8px;width:16px"></i>Team</a></li>
+                        <li><a href="pages/about.html"><i class="fas fa-clock"
+                                    style="margin-right:8px;width:16px"></i>History</a></li>
+                    </ul>
+                </li>
+                <li><a href="pages/courses.html">Courses</a></li>
+                <li class="dropdown">
+                    <a href="#">Services <i class="fas fa-chevron-down"
+                            style="font-size:0.65rem;margin-left:4px"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pages/dashboard.html"><i class="fas fa-th-large"
+                                    style="margin-right:8px;width:16px"></i>Student Portal</a></li>
+                        <li><a href="pages/admin.html"><i class="fas fa-shield-alt"
+                                    style="margin-right:8px;width:16px"></i>Admin Panel</a></li>
+                        <li><a href="pages/contact.html"><i class="fas fa-headset"
+                                    style="margin-right:8px;width:16px"></i>Support</a></li>
+                    </ul>
+                </li>
+                <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-right">
+            <a href="pages/login.html" class="btn primary-btn">Login</a>
+            <a href="pages/register.html" class="btn outline-btn">Register</a>
+        </div>
+    </header>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Empowering Education Through Innovation</h1>
+            <p>Manage students, courses, and administration in one comprehensive platform. Experience seamless learning
+                and management with our modern campus solution.</p>
+            <div class="hero-buttons">
+                <a href="pages/register.html" class="btn primary-btn"
+                    style="background:white;color:#4f46e5;box-shadow:0 4px 20px rgba(0,0,0,0.2)">
+                    <i class="fas fa-rocket"></i> Get Started Free
+                </a>
+                <a href="pages/about.html" class="btn ghost-btn">
+                    <i class="fas fa-play-circle"></i> Learn More
+                </a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="./images/campus-building.jpg" alt="Campus Building">
+        </div>
+    </section>
+
+    <!-- ============ STATS BAR ============ -->
+    <section class="stats-bar">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item fade-in">
+                    <h3>1,200+</h3>
+                    <p>Active Students</p>
+                </div>
+                <div class="stat-item fade-in">
+                    <h3>80+</h3>
+                    <p>Expert Courses</p>
+                </div>
+                <div class="stat-item fade-in">
+                    <h3>50+</h3>
+                    <p>Faculty Members</p>
+                </div>
+                <div class="stat-item fade-in">
+                    <h3>95%</h3>
+                    <p>Satisfaction Rate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Smart Campus?</h2>
+                <p>Everything you need to manage your educational institution, all in one place.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon-wrap blue"><i class="fas fa-user-graduate"></i></div>
+                    <h3>Student Management</h3>
+                    <p>Efficiently manage student records, attendance, performance tracking, and academic progress all
+                        in one centralized system.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-wrap green"><i class="fas fa-book-open"></i></div>
+                    <h3>Course Administration</h3>
+                    <p>Organize courses, schedules, syllabi, and academic resources seamlessly with our intuitive course
+                        management tools.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-wrap purple"><i class="fas fa-chart-line"></i></div>
+                    <h3>Analytics &amp; Reports</h3>
+                    <p>Get actionable insights with comprehensive analytics, custom reports, and data-driven
+                        decision-making tools.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-wrap orange"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Secure Platform</h3>
+                    <p>Enterprise-grade security with role-based access control, data encryption, and compliance with
+                        educational standards.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-wrap green"><i class="fas fa-comments"></i></div>
+                    <h3>Communication Hub</h3>
+                    <p>Built-in messaging, announcements, and notification system to keep students, faculty, and staff
+                        connected.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-wrap blue"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Mobile Friendly</h3>
+                    <p>Access the portal from any device with our fully responsive design optimized for desktop, tablet,
+                        and mobile.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Students Say</h2>
+                <p>Hear from students and faculty who use Smart Campus every day.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <p>Smart Campus has completely transformed how I manage my academic life. The course registration
+                        and grade tracking features are incredibly intuitive.</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/45?img=11" alt="Student">
+                        <div>
+                            <h4>Aarav Patel</h4>
+                            <span>Computer Science, 3rd Year</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <p>As a faculty member, the admin tools save me hours every week. Attendance tracking and report
+                        generation are now effortless and accurate.</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/45?img=5" alt="Faculty">
+                        <div>
+                            <h4>Dr. Meera Singh</h4>
+                            <span>Professor, Mathematics</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <p>The platform's analytics helped our department identify at-risk students early. It's made a real
+                        difference in our retention rates this year.</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/45?img=8" alt="Faculty">
+                        <div>
+                            <h4>Prof. Rajesh Kumar</h4>
+                            <span>Head of Engineering</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FAQ ACCORDION ============ -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Find answers to the most commonly asked questions about Smart Campus.</p>
+            </div>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <input type="checkbox" id="faq1">
+                    <label for="faq1" class="accordion-header">How do I register for courses?</label>
+                    <div class="accordion-content">
+                        <p>Log in to your student portal, navigate to the courses section, and select the courses you
+                            wish to enroll in. Make sure to check prerequisites and schedule conflicts before confirming
+                            your enrollment.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <input type="checkbox" id="faq2">
+                    <label for="faq2" class="accordion-header">What support is available for students?</label>
+                    <div class="accordion-content">
+                        <p>We offer 24/7 technical support, academic advising, and counseling services. Contact our
+                            support team through the contact page or student portal for immediate assistance.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <input type="checkbox" id="faq3">
+                    <label for="faq3" class="accordion-header">How can I access my grades?</label>
+                    <div class="accordion-content">
+                        <p>Grades are available in your student dashboard under the 'Academic Records' section. You can
+                            view detailed breakdowns by semester and download official transcripts.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <input type="checkbox" id="faq4">
+                    <label for="faq4" class="accordion-header">Is there a mobile app available?</label>
+                    <div class="accordion-content">
+                        <p>Our platform is fully responsive and works on any mobile browser. A dedicated mobile app is
+                            currently in development and will be available soon on both iOS and Android.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <input type="checkbox" id="faq5">
+                    <label for="faq5" class="accordion-header">How do I reset my password?</label>
+                    <div class="accordion-content">
+                        <p>Click the "Forgot Password?" link on the login page, enter your registered email address, and
+                            follow the instructions sent to your inbox to create a new password.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CTA BANNER ============ -->
+    <section class="cta-banner">
+        <div class="container">
+            <h2>Ready to Transform Your Campus?</h2>
+            <p>Join thousands of students and educators already using Smart Campus to enhance their educational
+                experience.</p>
+            <div class="cta-buttons">
+                <a href="register.html" class="btn"
+                    style="background:white;color:#4f46e5;box-shadow:0 4px 20px rgba(0,0,0,0.2)">
+                    <i class="fas fa-user-plus"></i> Create Free Account
+                </a>
+                <a href="contact.html" class="btn ghost-btn">
+                    <i class="fas fa-envelope"></i> Contact Sales
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Smart Campus</h3>
+                <p>Empowering education through technology. Our platform helps institutions deliver quality education
+                    and foster student success.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Campus Street, Education City</p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@smartcampus.edu</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Smart Campus. All rights reserved. Made with <i class="fas fa-heart"
+                    style="color:#ef4444"></i> for education.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
